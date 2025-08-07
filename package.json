@@ -1,0 +1,16 @@
+{
+  "name": "mysql",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node --watch app.js",
+    "start:db": "node demo_db_connection.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}

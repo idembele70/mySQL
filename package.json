@@ -4,7 +4,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node --watch app.js",
-    "start:db": "node demo_db_connection.js"
+    "start:db": "node --watch demo_db_connection.js"
   },
   "keywords": [],
   "author": "",

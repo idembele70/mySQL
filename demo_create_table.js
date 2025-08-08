@@ -13,10 +13,12 @@ connection.connect((err) => {
   if(err) throw err
   console.log('Connected to DB mydb!');
 
-  const sql = 'ALTER TABLE customers ADD COLUMN id INT AUTO_INCREMENT PRIMARY KEY';
+  // const sql = 'ALTER TABLE customers ADD COLUMN id INT AUTO_INCREMENT PRIMARY KEY';
+  const sql = 'CREATE TABLE customers (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), address VARCHAR(255))';
 
   connection.query(sql, (err, result) => {
     if(err) throw err;
-    console.log('Table altered');
+    // console.log('Table altered');
+    console.log('Table created');
   })
 });
